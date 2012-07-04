@@ -1,0 +1,132 @@
+
+#main {
+	 background-color: #CCC; min-width:950px; min-height:600px; width:100% 	
+}
+#reports {
+	background-color: #CCC; width:100%; margin-left:0 1%; margin-right: 0 1%;
+}
+#header {
+	background-color:#999;
+}
+#legend_reports {
+	text-align:center;	
+}
+#autopark_label {	
+	float:left; width:40%; 
+}
+#object_label {	
+	float:left; width:40%; 	
+}
+#interval_label_2 {	
+	float:left; width:35%;  text-align:center	
+}
+#template_label {	
+	float:left; width:40%; 
+}
+#autopark_select_1{ 
+	width:100%
+}
+
+#autopark_select_2{ 
+	width: 150px; background-color: white; color: black;
+}
+
+#object_select_1{ 
+	width:100%
+}
+
+#object_select_2{ 
+	width: 150px; background-color: white; color: black;
+}
+
+#template_select_1{ 
+	width:100%
+}
+
+#template_select_2{ 
+	width: 150px; background-color: white; color: black;
+}
+
+#interval_choose_1{ 
+	float:left; width:65%
+}
+
+#interval_choose_2{ 
+	width: 150px; background-color: white; color: black;
+}
+
+#auto{
+	width: 180px; background-color: white; color: black;
+}
+
+#wrapper {
+	float:left; width:100%; 
+}
+#right {
+	float:right;width:70%;	
+}
+#right_left {
+	float:left;width:40%;	
+}
+#right_right{
+	 float:right;width:60%;	
+}
+
+#left {
+	float:left; width:30%; 
+}
+
+#from {
+	float:left;	margin-left:2%; width:10%;	text-align:center
+}
+
+#to {
+	float:left;	width:10%; margin-left:2%;	 text-align:center
+}
+
+#from_calendar {
+	float:left
+}
+
+#to_calendar {
+	float:left
+}
+
+#do_report{
+	 float:left; 
+}
+
+#print{
+	float:left; 
+}
+
+#export{
+	float:left;  
+}
+
+#from_text{
+	width:110px
+}
+
+#to_text{
+	width:110px
+}
+
+#cal_panel{
+	float:left; width:100%
+}
+
+#but_panel{
+	float:right; margin-top:20px; margin-right:20px;
+}
+
+#interval_panel{
+	float:right; margin-left:10px;
+}
+
+#data{
+	overflow-y:scroll; border-bottom:groove; border-left:groove; border-top:groove; height:650px
+}
+#fieldset_data{
+ margin-top:20px;
+}
