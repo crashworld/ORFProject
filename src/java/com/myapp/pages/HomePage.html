@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title><wicket:message key="page.title" /></title>
+
+    </head>
+    <style type="text/css">
+        #main {
+            background-color: #CCC; min-width:1200px; min-height:800px; width:100%; height: 100%;
+                overflow-y:no-display
+        }
+        #reports {
+            background-color: #CCC; width:100%; margin-left:0 1%; margin-right: 0 1%;
+        }
+        #header {
+            background-color:#999;
+        }
+        #legend_reports {
+            text-align:center;	
+        }
+        #autopark_label {	
+            float:left; width:40%; 
+        }
+        #object_label {	
+            float:left; width:40%; 	
+        }
+        #interval_label_2 {	
+            float:left; width:35%;  	
+        }
+        #period_label_2 {	
+            float:left;   width:35%; 	
+        }
+        #template_label {	
+            float:left; width:40%; 
+        }
+        #autopark_select_1{ 
+            width:100%
+        }
+
+        #autopark_select_2{ 
+            width: 150px; background-color: white; color: black;
+        }
+
+        #object_select_1{ 
+            width:100%
+        }
+
+        #object_select_2{ 
+            width: 150px; background-color: white; color: black;
+        }
+
+        #template_select_1{ 
+            width:100%
+        }
+
+        #template_select_2{ 
+            width: 150px; background-color: white; color: black;
+        }
+
+        #interval_panel{
+            margin-left:10px; 
+        }
+
+        #interval_choose_1{ 
+            float:left;  width: 65%; 
+        }
+
+        #interval_choose_2{ 
+            width: 150px; background-color: white;                         
+        }
+
+        #period_choose_1{ 
+            float:left;  width: 65%;
+        }
+
+        #period_choose_2{ 
+            width: 75px; background-color: white; color: black; 
+        }
+
+        #auto{
+            width: 180px; background-color: white; color: black;
+        }
+
+        #wrapper {
+            float:left; width:100%; 
+        }
+        #right {
+            float:right;width:70%;	
+        }
+        #right_left {
+            float:left;width:30%;	
+        }
+        #right_right{
+            float:right;width:70%;	
+        }
+
+        #left {
+            float:left; width:30%; 
+        }
+
+        #from {
+            float:left; margin-left:2%; width:10%; text-align:center; 
+        }
+
+        #to {
+            float:left; width:10%; margin-left:2%; text-align:center; 
+        }
+
+        #from_calendar {
+            float:left; 
+        }
+
+        #to_calendar {
+            float:left; 
+        }
+
+        #do_report{
+            float:left; 
+        }
+
+        #print{
+            float:left; 
+        }
+
+        #export{
+            float:left;  
+        }
+
+        #from_text {
+            width:70px; height: 14px;
+        }
+
+        #to_text{
+            width:70px; height: 14px;
+        }
+
+        #to_time_hours{
+            width:30px; height: 14px;
+        }
+
+        #to_time_minutes{
+            width:30px; height: 14px;
+        }
+
+        #from_time_hours{
+            width:30px; height: 14px;
+        }
+
+        #from_time_minutes{
+            width:30px; height: 14px;
+        }
+
+        #cal_panel{
+            float:left; width:100%; 
+        }
+
+        #but_panel{
+            float:right; margin-top:20px; margin-right:20px;
+        }
+
+        #data{
+            overflow-y: scroll; border-bottom:groove; border-left:groove; border-top:groove; max-height: 600px;
+        }
+        #fieldset_data{
+            margin-top:20px;
+        }
+
+        #imagemap{
+            text-align: center
+        }
+
+        #dataview_integral{
+
+        }
+
+        #dataview_differental{
+            text-align: center
+        }
+
+        .dataview{
+            text-align: center;  width: 400px; /* Ширина таблицы */
+            border: 1px solid #0099ff; /* Рамка вокруг таблицы */
+            margin: auto;
+        }
+        .dataview th{
+            background-color: #99ccff;            
+            border-top: 1px solid #0099ff;
+            border-bottom:  1px solid #0099ff;
+        }
+        .dataview td{
+            background-color: #99ccff;            
+            border-top: 1px solid #0099ff;
+            border-bottom:  1px solid #0099ff;
+        }
+        
+        #linkOfFieldset{
+            text-decoration: none;
+        }
+        .testcss{
+            background-color: #CCC;            
+            border-top: 1px solid #0099ff;
+            border-bottom:  1px solid #0099ff;
+        }
+
+    </style>
+    <body>
+
+        <div id='main'>
+            <div id='header'><header wicket:id="headerpanel" /></div>
+            <div id='reports'>
+                <fieldset><legend id='legend_reports'><wicket:message key="page.main_name" /></legend>
+                    <div id='settings' wicket:id="settingspanel" />
+
+                    <div id='report_settings' wicket:id="generatedpanel"/></fieldset>
+            </div>
+        </div>
+    </body>
+</html>

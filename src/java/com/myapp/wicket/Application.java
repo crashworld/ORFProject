@@ -6,12 +6,13 @@
  
 package com.myapp.wicket;           
 
+import com.myapp.pages.HomePage;
 import org.apache.wicket.protocol.http.WebApplication;
-import other.ContactsDatabase;
+import com.myapp.other.ContactsDatabase;
 /** 
  *
  * @author Posudevskiy
- * @version 
+ * @version 1.0.0
  */
 
 public class Application extends WebApplication {

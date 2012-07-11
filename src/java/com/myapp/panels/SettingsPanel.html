@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>SettingsPanel</title>
+
+    </head>
+    <body>
+        <wicket:panel>
+            <fieldset><legend><wicket:message key="page.settings_name" /></legend>
+                <div id='wrapper'> 
+                    <div id='left'>           
+                        <div id='autopark_label'>
+                            <label for="autopark"><wicket:message key="page.autopark" /></label></div>
+                        <div id='autopark_select_1'><select name="autopark" id='autopark_select_2' wicket:id="autopark" /></div>              
+                        <div id='template_label'>
+                            <label for="template"><wicket:message key="page.form_report" /></label></div>
+                        <div id='template_select_1'><select name="template" id='template_select_2' wicket:id="report" /></div>  
+                        <div id='object_label'>
+                            <label for="object"><wicket:message key="page.object" /></label></div>
+                        <div id='object_select_1'><select name="object" id='object_select_2' wicket:id="object" /></div>             
+                    </div>
+
+                    <div id='right'>
+                        <div id='right_left'>
+                            <div id='interval_panel'>
+                                <div id='interval_label_2'><label for="interval" ><wicket:message key="page.interval" /></label></div>
+                                <div id='interval_choose_1'><select name="interval" id='interval_choose_2' wicket:id="interval">
+                                    </select></div>                                
+                                <div id='period_label_2'><label for="period" wicket:id="periodLabel"></label></div>
+                                <div id='period_choose_1'><select name="period" id='period_choose_2' wicket:id="period">
+                                    </select></div>
+                            </div>
+
+                        </div>
+                        <div id='right_right'>
+
+                            <style>
+                                .yui-skin-sam .yui-calcontainer{
+                                    width: 170px;                                    
+                                    height: 210px;
+                                }
+                                .yui-skin-sam .yui-calendar {
+                                    font-size: 77%;
+                                    font-weight:bold;
+                                }
+                                .yui-skin-sam .yui-calcontainer .title {
+                                    height: 10px;
+                                }
+
+                                .yui-skin-sam .yui-calendar .calhead {
+                                    font-size: 120%;
+                                }
+                            </style>
+
+                            <div id='cal_panel'>
+                                <div id='from'><label for="from"><wicket:message key="page.from" /></label></div>                                
+                                <div id='from_calendar'><input type="text" name='from'  id='from_text' wicket:id="dateTextFieldFrom"/>
+                                    <input type="text"  name="to"  id='from_time_hours' wicket:id="time_hours_from"/> :
+                                    <input type="text"  name="to"  id='from_time_minutes' wicket:id="time_minutes_from"/>
+                                </div> 
+                                <div id='to'><label for="to"><wicket:message key="page.to" /></label></div>  
+                                <div id='to_calendar'><input type="text"  name="to"  id='to_text' wicket:id="dateTextFieldTo"/>
+                                    <input type="text"  name="to"  id='to_time_hours' wicket:id="time_hours_to"/> :
+                                    <input type="text"  name="to"  id='to_time_minutes' wicket:id="time_minutes_to"/></div>
+                            </div>
+                            <div id='but_panel'>
+                                <div id='do_report'><input type="submit" wicket:message="value:page.generatereport"  /></div>      
+                                <div id='print'><input type="submit" wicket:message="value:page.print" /></div>                
+                                <div id='export'><input type="submit" wicket:message="value:page.export" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div></fieldset>
+        </wicket:panel>
+    </body>
+</html>

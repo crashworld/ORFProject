@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>IntegralTablePanel</title>
+        <style>
+        table.tree {
+                    width: 100%;
+                    border: 2px solid #DDDDDD;
+                    text-align: left;
+                }
+                table.tree td {
+                    border: 1px solid #DDDDDD;
+                    
+                }
+                table.tree th {
+                    border: 1px solid #DDDDDD;
+                }
+                table.tree tr.even {
+                    background-color: #FFFFFF;
+                }
+                table.tree tr.odd {
+                    background-color: #EEEEEE;
+                }
+                table.tree td.number {
+                    text-align: right;
+                    padding-right: 1em;
+                }
+        </style>
+    </head>
+    <body>
+        <wicket:panel>
+            <fieldset><legend id='integral_table_data'>
+                    <wicket:link>
+                        <img  wicket:id="image_block_hide_intetable"/>
+                        <img  wicket:id="image_block_show_intetable"/>
+                    </wicket:link>
+                    <a id ="linkOfFieldset" href="#" wicket:id="integralLink">Таблица <b>интервало стоянок и движения</b></a></legend>
+                <form wicket:id="integralForm">
+                    <div id="dataview_integral">
+                        <table class="tree" cellspacing="0" wicket:id="table">[table]</table>
+                    </div>
+                </form>
+            </fieldset>
+        </wicket:panel>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>ChartPanel</title>
+    </head>
+    <body>
+        <wicket:panel>
+            <fieldset><legend id='chart_data'>
+                    <wicket:link>
+                        <img  wicket:id="image_block_hide_chart"/>
+                        <img  wicket:id="image_block_show_chart"/>
+                    </wicket:link>
+                    <a id ="linkOfFieldset" href="#" wicket:id="chartLink">График</a></legend>
+                <form wicket:id="chartForm">
+                    <wicket:link>
+                        <div id="imagemap">
+                            <img wicket:id="chartData"/>                            
+                        </div>
+                    </wicket:link>
+                </form>
+            </fieldset>
+        </wicket:panel>
+    </body>
+</html>
